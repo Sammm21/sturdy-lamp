@@ -14,8 +14,7 @@ st.sidebar.markdown("# It's time to choose a new dear leader 🇸🇪 ")
 st.write("""
 ### This is a Exploratory Data Analysis App for Political Parties 2022.
 I've refrained from offering my interpretation of the analysis and instead opted to give the reader
-the tools to interpret the results themselves. Politics can be contensious and I just really like
-the math behind correspondence analysis and wanted to apply it to something that people care about and of course above all I did it for the fame and glory. 
+the tools to interpret the results themselves. 
 
 The colors I choose for the plots were chosen for interpretibility and their visual appeal (I wanted to make it look good and simple I tried giving each party it's own color but it looked to messy)
 		
