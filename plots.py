@@ -90,6 +90,6 @@ def pie(dt):
                              values=dt.values.flatten().tolist())])
   fig.update_traces(hoverinfo='label+percent', textinfo='label', textfont_size=20,
                   marker=dict(colors=colors, line=dict(color='#000000', width=2)))
-  fig.update_layout(paper_bgcolor='ivory')
+ # fig.update_layout(paper_bgcolor='ivory')
   return fig
 
