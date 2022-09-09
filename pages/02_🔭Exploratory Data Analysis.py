@@ -28,32 +28,32 @@ def load_data(data):
 	return dt
 
 ## load all the data
-dt_age_men = load_data("dt_age_men.pkl")
-dt_age_women = load_data("dt_age_women.pkl")
-dt_region_men = load_data("dt_region_men.pkl")
-dt_region_women = load_data("dt_region_men.pkl")
-dt_countryofbirth_men = load_data("dt_countryofbirth_men.pkl")
-dt_countryofbirth_women = load_data("dt_countryofbirth_women.pkl")
-dt_ethinicity_men = load_data("dt_ethnicity_men.pkl")
-dt_ethnicity_women = load_data("dt_ethnicity_women.pkl")
-dt_education_men = load_data("dt_education_men.pkl")
-dt_education_women = load_data("dt_education_women.pkl")
-dt_children_men = load_data("dt_children_men.pkl")
-dt_children_women = load_data("dt_children_women.pkl")
-dt_civil_men = load_data("dt_civilstatus_men.pkl")
-dt_civil_women = load_data("dt_civilstatus_women.pkl")
-dt_housing_men = load_data("dt_housing_men.pkl")
-dt_housing_women = load_data("dt_housing_women.pkl")
-dt_employment_men = load_data("dt_employment_men.pkl")
-dt_employment_women = load_data("dt_employment_women.pkl")
-dt_income_men = load_data("dt_income_men.pkl")
-dt_income_women = load_data("dt_income_women.pkl")
-dt_occupation_class = load_data("dt_occupational_class.pkl")
-dt_sector = load_data("dt_sector.pkl")
-dt_sectorn_2 = load_data("dt_sector_2.pkl")
-dt_union = load_data("dt_union.pkl")
-dt_ses_group = load_data("dt_ses_group.pkl")
-dt_ses_group_emp = load_data("dt_ses_group_employed.pkl")
+dt_age_men = load_data("Data/dt_age_men.pkl")
+dt_age_women = load_data("Data/dt_age_women.pkl")
+dt_region_men = load_data("Data/dt_region_men.pkl")
+dt_region_women = load_data("Data/dt_region_men.pkl")
+dt_countryofbirth_men = load_data("Data/dt_countryofbirth_men.pkl")
+dt_countryofbirth_women = load_data("Data/dt_countryofbirth_women.pkl")
+dt_ethinicity_men = load_data("Data/dt_ethnicity_men.pkl")
+dt_ethnicity_women = load_data("Data/dt_ethnicity_women.pkl")
+dt_education_men = load_data("Data/dt_education_men.pkl")
+dt_education_women = load_data("Data/dt_education_women.pkl")
+dt_children_men = load_data("Data/dt_children_men.pkl")
+dt_children_women = load_data("Data/dt_children_women.pkl")
+dt_civil_men = load_data("Data/dt_civilstatus_men.pkl")
+dt_civil_women = load_data("Data/dt_civilstatus_women.pkl")
+dt_housing_men = load_data("Data/dt_housing_men.pkl")
+dt_housing_women = load_data("Data/dt_housing_women.pkl")
+dt_employment_men = load_data("Data/dt_employment_men.pkl")
+dt_employment_women = load_data("Data/dt_employment_women.pkl")
+dt_income_men = load_data("Data/dt_income_men.pkl")
+dt_income_women = load_data("Data/dt_income_women.pkl")
+dt_occupation_class = load_data("Data/dt_occupational_class.pkl")
+dt_sector = load_data("Data/dt_sector.pkl")
+dt_sectorn_2 = load_data("Data/dt_sector_2.pkl")
+dt_union = load_data("Data/dt_union.pkl")
+dt_ses_group = load_data("Data/dt_ses_group.pkl")
+dt_ses_group_emp = load_data("Data/dt_ses_group_employed.pkl")
 
 
 ## Stacked table
@@ -127,18 +127,19 @@ three_group = ["Age",
 all_group = "All"
 
 ca_interpretation = """ 
-					- Points that lie close to eachother indicate some form of similarity
-					- Points that lie far from one and other indicate some form of difference. You can usually draw interesting conclusions looking at the extreme points on the axis but also on the diagonals of the plot
-					- A row and column profile are probably negatively associated if they are on opposite sides of the origin 
-					- The further a point from the origin, the stronger their positive or negative association
-					- Remember you can expand the plot, download it as a .png, and zoom in and out to get a better view of the plot by clicking the toolbar in the upper right corner of the plot!
-					"""
+- Points that lie close to eachother indicate some form of similarity
+- Points that lie far from one and other indicate some form of difference. You can usually draw interesting conclusions looking at the extreme points on the axis but also on the diagonals of the plot
+- A row and column profile are probably negatively associated if they are on opposite sides of the origin 
+- The further a point from the origin, the stronger their positive or negative association
+- Remember you can expand the plot, download it as a .png, and zoom in and out to get a better view of the plot by clicking the toolbar in the upper right corner of the plot!
+"""
 
-pie_interpretation = """Some people hate on pie charts, especially epidemiologists, 
-					they claim bar charts are superior and pie charts are hard to read,
-					I like pie charts, and for this data they are perfect and visually pleasing. These
-					pie charts just show the proportion of respondents for each political party that the Correspondence Analysis above was based on.
-					"""
+pie_interpretation = """
+Some people hate on pie charts, especially epidemiologists, 
+they claim bar charts are superior and pie charts are hard to read,
+I like pie charts, and for this data they are perfect and visually pleasing. These
+pie charts just show the proportion of respondents for each political party that the Correspondence Analysis above was based on.
+"""
 
 if submenu == "About":
 	st.write("""
