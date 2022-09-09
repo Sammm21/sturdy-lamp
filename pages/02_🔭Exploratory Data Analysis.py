@@ -31,7 +31,7 @@ def load_data(data):
 dt_age_men = load_data("Data/dt_age_men.pkl")
 dt_age_women = load_data("Data/dt_age_women.pkl")
 dt_region_men = load_data("Data/dt_region_men.pkl")
-dt_region_women = load_data("Data/dt_region_men.pkl")
+dt_region_women = load_data("Data/dt_region_women.pkl")
 dt_countryofbirth_men = load_data("Data/dt_countryofbirth_men.pkl")
 dt_countryofbirth_women = load_data("Data/dt_countryofbirth_women.pkl")
 dt_ethinicity_men = load_data("Data/dt_ethnicity_men.pkl")
