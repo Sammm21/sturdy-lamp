@@ -5,7 +5,7 @@ from PIL import Image
 
 
 # load image
-img = Image.open("valvaka22.jpg")
+img = Image.open("Images/valvaka22.jpg")
 
 st.image(img, use_column_width=True)
 
