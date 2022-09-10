@@ -72,20 +72,7 @@ dt_all = pd.concat([dt_age, dt_region, dt_countryofbirth, dt_ethinicity,
 	dt_education, dt_children, dt_civil, dt_housing, dt_employment,
 	dt_income, dt_occupation_class, dt_sector, dt_union, dt_ses_group])
 
-def make_labels_and_names(X):
 
-    if isinstance(X, pd.DataFrame):
-        row_label = X.index.name if X.index.name else 'Rows'
-        row_names = X.index.tolist()
-        col_label = X.columns.name if X.columns.name else 'Columns'
-        col_names = X.columns.tolist()
-    else:
-        row_label = 'Rows'
-        row_names = list(range(X.shape[0]))
-        col_label = 'Columns'
-        col_names = list(range(X.shape[1]))
-
-    return row_label, row_names, col_label, col_names
 # data dict
 
 data_dict_3 = {"Age": [dt_age_men, dt_age_women],
