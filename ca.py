@@ -2,7 +2,19 @@ import numpy as np
 from scipy import linalg
 
 def ca(dt):
-  """ CA function """
+  """ CA function:
+  Computation of Correspondence Analysis using numpy
+  1. Correspondence Matrix
+  2. Row and column masses
+  3. Diagonalize row and column masses and calculate the inverses and roots 
+  4. Calculate the matrix of standardized residuals
+  5. Calculate SVD
+  6. Standard Coordinates of Rows
+  7. Standard Coordinates of Columns
+  8. Principal Coordinates of Rows
+  9. Principal Cooordinates of Columns
+  10. Principal Inertias
+  """
 
   dt = dt.loc[(dt!=0).any(1)]
   cp_dt = dt / np.sum(dt).sum()
