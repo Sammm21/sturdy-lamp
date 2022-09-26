@@ -43,9 +43,10 @@ def plot(A,B, row_names, col_names, row_markers='markers+text', col_markers='mar
 					textfont_size=18)
 	fig.update_layout(title='Principal Coordinates',
 		yaxis_zeroline=True, xaxis_zeroline=True, 
-		plot_bgcolor='ivory', width=950, height=700)
-	fig.update_xaxes(zerolinecolor='navy', visible=False)
-	fig.update_yaxes(zerolinecolor='navy', visible=False)
+		plot_bgcolor='ivory', width=950, height=700,
+		yaxis={'visible': False},xaxis={'visible': False})
+	fig.update_xaxes(zerolinecolor='navy')
+	fig.update_yaxes(zerolinecolor='navy')
 
 	return fig
 
